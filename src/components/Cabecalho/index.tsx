@@ -1,9 +1,15 @@
-import styles from './Cabecalho.module.css'
+import React from 'react';
+import { CabecalhoModule } from './Cabecalho.module'; // Importa o styled-component
 
-const Cabecalho = () => (
-  <header className={styles.cabecalho}>
-    <h1>EBAC Jobs</h1>
-  </header>
-)
+const Cabecalho = () => {
+  return (
+    <CabecalhoModule>
+      <header className="cabecalho">
+        <h1>EBAC Jobs</h1>
+      </header>
+    </CabecalhoModule>
+  );
+};
 
-export default Cabecalho
+export default Cabecalho;
+
